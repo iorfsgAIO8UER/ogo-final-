@@ -22,12 +22,12 @@
         }
  
         main {
-            background-color: lightgray;
+            background-color: white;
             padding: 10px;
         }
  
         footer {
-            background-color: rgb(229, 200, 200);
+            background-color: white;
             padding: 10px;
             text-align: center;
         }
@@ -76,9 +76,95 @@
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.441);
         }
  
+       
         .move-right {
             margin-left: auto;
         }
+ 
+        main .container {
+            display: flex;
+            border-bottom: 1px solid gray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+ 
+        main .container .left-block {
+            padding: 60px;
+            flex-basis: 50%;
+            box-sizing: border-box;
+        }
+ 
+        main .container .right-block {
+            flex-basis: 50%;
+            /* background-color: red; */
+        }
+ 
+        main .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+ 
+        main .container .btn {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid rgb(182, 182, 182);
+            text-align: center;
+            padding: 6px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+ 
+        main .container2 {
+            display: flex;
+            border-bottom: 1px solid gray;
+            font-family: 'Times New Roman', Times, serif;
+         
+        }
+ 
+        main .container2 .left-block2 {
+            padding: 60px;
+            flex-basis: 50%;
+            box-sizing: border-box;
+        }
+ 
+        main .container2 .right-block2 {
+            flex-basis: 38%;
+           
+        }
+ 
+        main .container2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+ 
+        main .container2 .btn2 {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid rgb(182, 182, 182);
+            text-align: center;
+            padding: 6px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+ 
+        .galala {
+ 
+ text-align: center;
+}
+ 
+.gallery {
+ display: flex;
+ height: 200px;
+ margin: 60px;
+ 
+}
+ 
+.gallery img {
+ object-fit: cover;
+     flex-grow: 1;
+ 
+}
+ 
+ 
        
    
     </style>
@@ -86,7 +172,7 @@
  
 <body>
     <header>
-        <h2>ZELENSIE</h2>
+        <h2>ZELENSKI</h2>
  
        
         <nav>
@@ -118,19 +204,29 @@
             <ul>
                 <li>
                     <a href="index.php">
-                        <i class="bi bi-instagram"></i>
+                      <i class="bi bi-twitter"></i></i>
                     </a>
                 </li>
                 <li>
                     <a href="add.php">
-                        <i class="bi bi-twitter"></i>
+                      <i class="bi bi-facebook"></i></i>
                     </a>
                 </li>
                 <li>
                     <a href="view.php">
-                        <i class="bi bi-youtube"></i>
+                      <i class="bi bi-instagram"></i></i>
                     </a>
                 </li>
+                <li>
+                  <a href="view.php">
+                    <i class="bi bi-youtube"></i></i>
+                  </a>
+              </li>
+              <li>
+                <a href="view.php">
+                  <i class="bi bi-envelope-fill"></i></i>
+                </a>
+            </li>
             </ul>
         </nav>
     </header>
@@ -138,24 +234,99 @@
    
         <main>
             <!-- main content -->
-            Content
+            <div class="container">
+                <div class="left-block">
+                    <h2>Let's hit the road</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore velit libero harum necessitatibus,
+                        at
+                        hic dolorum assumenda eligendi dolor quibusdam reprehenderit tempora.</p>
+                    <p>
+                        <small>Odio quis excepturi ducimus
+                            blanditiis dolores in!</small>
+                    </p>
+                    <div class="btn">
+                        START
+                    </div>
+                </div>
+                <div class="right-block">
+                    <img src="./imege/unnamed.jpg" alt="">
+                </div>
+            </div>
+     
+     
+     
+            <div class="container2">
+                <div class="right-block2">
+                    <img src="./imege/Знімок екрана 2025-03-25 102958.png" alt="">
+                </div>
+                <div class="left-block2">
+                    <h2>Story</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore velit libero harum necessitatibus,
+                        at
+                        hic dolorum assumenda eligendi dolor quibusdam reprehenderit tempora.</p>
+                    <p>
+                        <small>Odio quis excepturi ducimus
+                            blanditiis dolores in!</small>
+                    </p>
+                    <div class="btn2">
+                        More
+                    </div>
+                </div>
+            </div>
+     
+     
+            <div class="container">
+                <div class="left-block">
+                    <h2>Story</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore velit libero harum necessitatibus,
+                        at
+                        hic dolorum assumenda eligendi dolor quibusdam reprehenderit tempora.</p>
+                    <p>
+                        <small>Odio quis excepturi ducimus
+                            blanditiis dolores in!</small>
+                    </p>
+                    <div class="btn">
+                        More
+                    </div>
+                </div>
+                <div class="right-block">
+                    <img src="./imege/Знімок екрана 2025-03-25 103110.png" alt="">
+                </div>
+            </div>
+            <!-- next block -->
+           
+            <h2 class="galala">Gallery</h2>
+    <section class="gallery">
+ 
+        <img src="./imege/завантаження.jpg" alt="">
+ 
+        <img src="./imege/ггг.jpg" alt="">
+ 
+        <img src= "./imege/b9c0acceb85fd3ffa4ca.jpg" alt="">
+ 
+        <img src="./imege/unnamed.jpg" alt="">
+     
+ 
+ 
+    </section>
         </main>
+       
         <footer>
             <div>
                 <a href="">
-                    <img src="./imege/gmail-128.png" alt="">
+                    <img src="./image/facebook-128.png" alt="">
                 </a>
                 <a href="">
-                    <img src="./imege/instagram-2-128.png" alt="">
+                    <img src="./image/instagram-2-128.png" alt="">
                 </a>
                 <a href="">
-                    <img src="./imege/twitter-128.png" alt="">
+                    <img src="./image/twitter-128.png" alt="">
                 </a>
                 <a href="">
-                    <img src="./imege/youtube-128.png" alt="">
+                    <img src="./image/youtube-128.png" alt="">
                 </a>
                 <a href="">
-                    <img src="./imege/facebook-128.png" alt="">
+                    <img src="./image/gmail-128.png" alt="">
                 </a>
             </div>
             <p>@ Untiteled 2025</p>
